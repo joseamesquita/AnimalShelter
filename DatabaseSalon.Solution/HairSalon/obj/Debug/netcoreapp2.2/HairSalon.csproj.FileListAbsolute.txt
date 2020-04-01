@@ -1,0 +1,12 @@
+/Users/JoseAmesquita/Desktop/DatabaseSalon.Solution/HairSalon/obj/Debug/netcoreapp2.2/HairSalon.csprojAssemblyReference.cache
+/Users/JoseAmesquita/Desktop/DatabaseSalon.Solution/HairSalon/obj/Debug/netcoreapp2.2/HairSalon.csproj.CoreCompileInputs.cache
+/Users/JoseAmesquita/Desktop/DatabaseSalon.Solution/HairSalon/obj/Debug/netcoreapp2.2/HairSalon.RazorAssemblyInfo.cache
+/Users/JoseAmesquita/Desktop/DatabaseSalon.Solution/HairSalon/obj/Debug/netcoreapp2.2/HairSalon.RazorAssemblyInfo.cs
+/Users/JoseAmesquita/Desktop/DatabaseSalon.Solution/HairSalon/obj/Debug/netcoreapp2.2/HairSalon.AssemblyInfoInputs.cache
+/Users/JoseAmesquita/Desktop/DatabaseSalon.Solution/HairSalon/obj/Debug/netcoreapp2.2/HairSalon.AssemblyInfo.cs
+C:\Users\brook\desktop\code_reviews\week4\jose-amesquita\DatabaseSalon.Solution\HairSalon\obj\Debug\netcoreapp2.2\HairSalon.csprojAssemblyReference.cache
+C:\Users\brook\desktop\code_reviews\week4\jose-amesquita\DatabaseSalon.Solution\HairSalon\obj\Debug\netcoreapp2.2\HairSalon.csproj.CoreCompileInputs.cache
+C:\Users\brook\desktop\code_reviews\week4\jose-amesquita\DatabaseSalon.Solution\HairSalon\obj\Debug\netcoreapp2.2\HairSalon.RazorAssemblyInfo.cache
+C:\Users\brook\desktop\code_reviews\week4\jose-amesquita\DatabaseSalon.Solution\HairSalon\obj\Debug\netcoreapp2.2\HairSalon.RazorAssemblyInfo.cs
+C:\Users\brook\desktop\code_reviews\week4\jose-amesquita\DatabaseSalon.Solution\HairSalon\obj\Debug\netcoreapp2.2\HairSalon.AssemblyInfoInputs.cache
+C:\Users\brook\desktop\code_reviews\week4\jose-amesquita\DatabaseSalon.Solution\HairSalon\obj\Debug\netcoreapp2.2\HairSalon.AssemblyInfo.cs
