@@ -2,11 +2,11 @@ using Microsoft.EntityFrameworkCore;
 
 namespace HairSalon.Models
 {
-  public class HAIRSALONContext : DbContext
+  public class HairSalonContext : DbContext
   {
-    public virtual DbSet<Client> Client { get; set; }
-    public DbSet<Stylist> Stylist { get; set; }
+    public virtual DbSet<Stylist> Stylists { get; set; }
+    public DbSet<Client> Clients { get; set; }
 
-    public Context(HairSalonDbContextOptions options) : base(options) { }
+    public HairSalonContext(DbContextOptions options) : base(options) { }
   }
 }

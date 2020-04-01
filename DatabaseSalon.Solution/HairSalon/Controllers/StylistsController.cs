@@ -1,5 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
-using BestRestaurants.Models;
+using HairSalon.Models;
 using System.Collections.Generic;
 using System.Linq;
 using Microsoft.EntityFrameworkCore;
@@ -11,14 +11,15 @@ namespace HairSalon.Controllers
   {
     private readonly HairSalonContext _db;
 
-    public StylistsController(StylistsContext db)
+    public StylistsController(HairSalonContext db)
     {
       _db = db;
     }
 
     public ActionResult Index()
     {
-      List<Stylist> model = _db.Stylists.Include(stylist => stylist.Client).ToList();
+      List<Stylist> model = _db.Stylists.ToList();
+      // List<Stylist> model = _db.Stylists.Include(stylist => stylist.Client).ToList();
       return View(model);
     }
 
@@ -32,24 +33,24 @@ namespace HairSalon.Controllers
 
     public ActionResult Create()
     {
-      ViewBag.ClientId = new SelectList(_db.Clients, "ClientId", "ClientName");
+      // ViewBag.ClientId = new SelectList(_db.Clients, "ClientId", "ClientName");
       return View();
     }
 
     public ActionResult Details(int id)
     {
       Stylist thisStylist = _db.Stylists.FirstOrDefault(stylists => stylists.StylistId == id);
+      thisStylist.Clients = _db.Clients.Where(client => client.StylistId == id).ToList();
       return View(thisStylist);
     }
 
     public ActionResult Edit(int id)
     {
       var thisStylist = _db.Stylists.FirstOrDefault(stylists => stylists.StylistId == id);
-      ViewBag.ClientId = new SelectList(_db.Clients, "ClientId", "ClientName");
       return View(thisStylist);
     }
 
-    [HttpPost]
+    // [HttpPost]
     public ActionResult Edit(Stylist stylist)
     {
       _db.Entry(stylist).State = EntityState.Modified;
@@ -73,8 +74,7 @@ namespace HairSalon.Controllers
     }
     public ActionResult Search(string search)
     {
-      List<Stylist> model = _db.Stylists.Where(stylist => (stylist.Name.Contains(search)) || (stylist.Review.Contains(search))).ToList();
-
+      List<Stylist> model = _db.Stylists.Where(stylist => (stylist.StylistName.Contains(search))).ToList();
       return View(model);
     }
   }
